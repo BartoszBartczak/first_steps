@@ -1,19 +1,8 @@
-<div class="row">
-    <div class="col-sm-6">
-       <img class="card-img-top" src="assets/img/trojmorze.jpg" height="350" alt="Card image cap">
-       <div class="card-body">
-           <h5 class="card-title">Szukając rozwiązania dla Polski</h5>
-             <p class="card-text">W idei Międzymorza skupia w sobie większość kwestii, które spędzają sen z powiek rozsądnym Polakom (a także Ukraińcom, Czechom, Rumunom czy Chorwatom).
-        Radosław Pyffel, najbardziej znany w Polsce ekspert od...</p>
-         <a href="#" class="btn btn-primary">Czytaj więcej</a>
-    </div>
+<div class="card mb-3" *ngFor="let article of articles">
+  <img class="card-img-top" src="{{ article.pictureUrl }}" alt="Card image cap" width="300px" height="500px">
+  <div class="card-body">
+    <h5 class="card-title">{{ article.title }}</h5>
+    <p class="card-text">{{ article.lead }}</p>
+    <a routerLink="" class="btn btn-primary">Czytaj więcej</a>
   </div>
-    <div class="col-sm-6">
-      <img class="card-img-top" src="assets/img/miedzymorze.jpg" height="350" alt="Card image cap">
-         <div class="card-body">
-         <h5 class="card-title">Międzymorze jako droga do identytaryzmu ekonomicznego</h5>
-          <p class="card-text">Coraz większą popularność zaczyna zdobywać sobie identytaryzm. Nic więc dziwnego, jest on prawidłową reakcją....</p>
-        <a href="#" class="btn btn-primary">Czytaj więcej</a>
-        </div>
-      </div>
-  </div>
+</div>
