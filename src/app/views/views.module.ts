@@ -4,13 +4,16 @@ import { ArticlesComponent } from './articles/articles.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { MainComponent } from './main/main.component';
 import { ShowComponent } from './show/show.component';
+import { RouterModule } from '@angular/router';
+import { ForumComponent } from './forum/forum.component';
 
 
 
 @NgModule({
-  declarations: [ArticlesComponent, QuizComponent, MainComponent, ShowComponent],
+  declarations: [ArticlesComponent, QuizComponent, MainComponent, ShowComponent, ForumComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class ViewsModule { }
